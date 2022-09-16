@@ -1,1 +1,1 @@
-console.log('ghj');
+"use strict"
