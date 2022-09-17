@@ -139,6 +139,10 @@ body {
 }
 .page__practice {
 }
+.page__whoweare {
+}
+.page__clients {
+}
 /* -----------------HEADER-BLOCK------------------- */
 .header-block {
 	text-align: center;
@@ -190,7 +194,7 @@ body {
 		padding: 115px 0px 160px 0px;
 	}
 }
-.main-block__body > *:not(:last-child){
+.main-block__body > *:not(:last-child) {
 	margin: 0px 0px 35px 0px;
 }
 .main-block__title {
@@ -238,17 +242,17 @@ body {
 	}
 }
 @media (min-width: 479px) {
-.main-block__button:not(:last-child){
-	margin-right: 10px;
-}
+	.main-block__button:not(:last-child) {
+		margin-right: 10px;
+	}
 }
 .main-block__button_orange {
-	background: #FF7B47;
+	background: #ff7b47;
 	color: #fff;
 }
 .main-block__button_border {
-	color: #0D5C63;
-	border: 1px solid #0D5C63;
+	color: #0d5c63;
+	border: 1px solid #0d5c63;
 }
 .main-block__image {
 	position: absolute;
@@ -275,10 +279,10 @@ body {
 .services__body {
 }
 @media (min-width: 670px) {
-.services__body {
-	display: flex;
-	flex-wrap: wrap;
-	margin: 0px -15px;
+	.services__body {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0px -15px;
 	}
 }
 .services__column {
@@ -287,7 +291,7 @@ body {
 }
 @media (max-width: 992px) {
 	.services__column:not(:last-child) {
-	margin: 0px 0px 30px 0px;
+		margin: 0px 0px 30px 0px;
 	}
 	.services__column {
 		flex: 0 1 50%;
@@ -299,8 +303,8 @@ body {
 	}
 }
 @media (min-width: 670px) {
-.services__column {
-	padding: 0px 15px;
+	.services__column {
+		padding: 0px 15px;
 	}
 }
 .services__item {
@@ -317,7 +321,7 @@ body {
 .item-service {
 }
 .item-service_green {
-	background: #0D5C63;
+	background: #0d5c63;
 }
 .item-service_green .item-service__title {
 	color: #fff;
@@ -325,7 +329,7 @@ body {
 .item-service_green .item-service__text {
 	color: #fff;
 }
-.item-service > *:not(:last-child){
+.item-service > *:not(:last-child) {
 	margin: 0px 0px 10px 0px;
 }
 .item-service__icon {
@@ -392,7 +396,7 @@ body {
 	padding: 30px;
 	text-align: center;
 }
-.advantages__item > *:not(:last-child){
+.advantages__item > *:not(:last-child) {
 	margin: 0px 0px 10px 0px;
 }
 /* Чтобы выровнять иконки разной высоты по их низу, укаываем высоту наибольшей из них, флекс и выравнивание flex-end */
@@ -457,7 +461,6 @@ body {
 	}
 }
 .practice__item {
-
 }
 .item-practice {
 	background-color: #fff;
@@ -477,7 +480,7 @@ body {
 	text-decoration: underline;
 }
 /* Чтобы подействовал внешний отступ, нужно в .item-practice__link поставить "display: inline-block", поскольку внешний отступ не действует для строчных объектов, каким является ссылка. "inline-block" - по сути это блок в строке, т. е. элемент строчный, но к нему применяются размеры и отступы, как у блочного*/
-.item-practice__link:not(:last-child){
+.item-practice__link:not(:last-child) {
 	margin: 0px 0px 15px 0px;
 }
 .item-practice__title {
@@ -493,4 +496,151 @@ body {
 .item-practice__image {
 	display: block;
 	padding: 0px 0px 60% 0px;
+}
+/* ------------------WHOWEARE-------------------- */
+.whoweare {
+	background: #fff;
+	padding: 80px 0px 130px 0px;
+}
+.whoweare__container {
+}
+.whoweare__header {
+	margin: 0px 0px 100px 0px;
+}
+.whoweare__body {
+	display: flex;
+	align-items: flex-start;
+}
+.whoweare__video {
+	flex: 0 0 57%;
+	position: relative;
+	padding: 0px 0px 42.25% 0px;
+}
+.whoweare__video iframe {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+}
+.whoweare__content {
+	flex: 1 1 auto;
+	padding: 20px 0px 0px 121px;
+}
+.whoweare__top:not(:last-child) {
+	margin: 0px 0px 50px 0px;
+}
+.whoweare__title {
+	font-weight: 800;
+	font-size: 40px;
+	line-height: 142%;
+	letter-spacing: 0.2px;
+}
+.whoweare__title:not(:last-child) {
+	margin: 0px 0px 10px 0px;
+}
+.whoweare__text {
+	color: #737373;
+	line-height: 142%;
+}
+/* Внешний отступ должен быть 50px. Но у нас установлен в title ещё отступ 10px вниз. В таком случае они схлопываются - применяется наибольший из них, т.е. 50px, что нам и нужно */
+.whoweare__items {
+}
+.whoweare__item {	
+}
+.whoweare__item:not(:last-child) {
+	margin: 0px 0px 30px 0px;
+}
+.item-whoweare {
+	display: flex;
+}
+.item-whoweare__icon {
+	flex: 0 0 32px;
+}
+.item-whoweare__body {
+	flex: 1 1 auto;
+	padding: 0px 0px 0px 20px;
+}
+.item-whoweare__title {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 150%;
+}
+.item-whoweare__title:not(:last-child) {
+	margin: 0px 0px 5px 0px;
+}
+.item-whoweare__text {
+	color: #737373;
+	white-space: nowrap;
+	line-height: 142%;
+	width: 225px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+@media (max-width: 1080px) {
+	.whoweare__content {
+		padding: 0px 0px 0px 50px;
+	}
+}
+@media (max-width: 950px) {
+	.whoweare {
+		padding: 50px 0px 50px 0px;
+	}
+	.whoweare__header {
+		margin: 0px 0px 30px 0px;
+	}
+	.whoweare__body {
+		flex-direction: column-reverse;
+		align-items: stretch;
+	}
+	.whoweare__content {
+		padding: 0px;
+	}
+	.whoweare__video {
+		padding: 0px 0px 56.25% 0px;
+	}
+	.whoweare__video:not(:last-child) {
+		margin: 50px 0px 0px 0px;
+	}
+	.whoweare__title {
+		font-size: 24px;
+	}
+}
+@media (max-width: 767px) {
+	.whoweare {
+		padding: 20px 0px 50px 0px;
+	}
+	.whoweare__top:not(:last-child) {
+		margin: 0px 0px 30px 0px;
+	}	
+	.whoweare__video:not(:last-child) {
+		margin: 30px 0px 0px 0px;
+	}
+}
+/* ------------------CLIENTS-------------------- */
+.clients {
+	padding: 50px 0px;
+}
+@media (max-width: 767px) {
+	.clients {
+		padding: 30px 0px;
+	}
+}
+.clients__container {
+}
+.clients__items {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.clients__item {
+	padding: 8px 15px;
+	flex: 0 1 16.6667%;
+	text-align: center;
+	min-width: 140px;
+}
+.clients__item img {
+	max-width: 100%;
 }
