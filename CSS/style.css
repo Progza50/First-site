@@ -135,6 +135,36 @@ body {
 	z-index: 2;
 	margin: -111px 0px 0px 0px;
 }
+.page__advantages {
+}
+.page__practice {
+}
+/* -----------------HEADER-BLOCK------------------- */
+.header-block {
+	text-align: center;
+}
+.header-block__title {
+	font-size: 40px;
+	line-height: 142%;
+	font-weight: 700;
+}
+.header-block__title:not(:last-child) {
+	margin: 0px 0px 10px 0px;
+}
+.header-block__sub-title {
+	color: #737373;
+	line-height: 142%;
+}
+@media (max-width: 992px) {
+	.header-block__title {
+		font-size: 35px;
+	}
+}
+@media (max-width: 767px) {
+	.header-block__title {
+		font-size: 30px;
+	}
+}
 /* --------------------FOOTER---------------------- */
 .footer {
 }
@@ -309,4 +339,158 @@ body {
 .item-service__text {
 	color: #737373;
 	line-height: 142%;
+	letter-spacing: 0.2px;
+}
+/* ------------------ADVATAGES-------------------- */
+.advantages {
+	padding: 80px 0px;
+}
+@media (max-width: 992px) {
+	.advantages {
+		padding: 50px 0px;
+	}
+}
+@media (max-width: 767px) {
+	.advantages {
+		padding: 40px 0px;
+	}
+}
+.advantages__container {
+}
+/* Для блока внешний отступ задавать нельзя, а для элемента можно */
+.advantages__header {
+	margin: 0px 0px 50px 0px;
+}
+@media (max-width: 767px) {
+	.advantages__header {
+		margin: 0px 0px 25px 0px;
+	}
+}
+.advantages__body {
+	display: flex;
+	margin: 0 -15px -30px;
+	flex-wrap: wrap;
+}
+.advantages__column {
+	padding: 0px 15px;
+	margin: 0px 0px 30px 0px;
+	flex: 0 1 25%;
+}
+@media (max-width: 1020px) {
+	.advantages__column {
+		flex: 1 1 50%;
+	}
+}
+@media (max-width: 560px) {
+	.advantages__column {
+		flex: 1 1 100%;
+	}
+}
+.advantages__item {
+	background-color: #fff;
+	font-weight: 700;
+	padding: 30px;
+	text-align: center;
+}
+.advantages__item > *:not(:last-child){
+	margin: 0px 0px 10px 0px;
+}
+/* Чтобы выровнять иконки разной высоты по их низу, укаываем высоту наибольшей из них, флекс и выравнивание flex-end */
+.advantages__icon {
+	height: 48px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+}
+.advantages__value {
+	font-size: 40px;
+	line-height: 142%;
+}
+.advantages__text {
+	letter-spacing: 0.1px;
+	color: #737373;
+	font-size: 16px;
+	line-height: 150%;
+}
+/* ------------------PRACTICE-------------------- */
+.practice {
+	padding: 125px 0px 80px 0px;
+}
+@media (max-width: 993px) {
+	.practice {
+		padding: 40px 0px 80px 0px;
+	}
+}
+@media (max-width: 767px) {
+	.practice {
+		padding: 0px 0px 40px 0px;
+	}
+}
+.practice__container {
+}
+.practice__header {
+	margin: 0px 0px 45px 0px;
+}
+@media (max-width: 767px) {
+	.practice__header {
+		padding: 0px 0px 25px 0px;
+	}
+}
+.practice__body {
+	margin: 0 -20px -30px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.practice__column {
+	padding: 0px 20px;
+	margin: 0px 0px 30px 0px;
+	flex: 0 1 25%;
+}
+@media (max-width: 1040px) {
+	.practice__column {
+		flex: 0 1 50%;
+	}
+}
+@media (max-width: 630px) {
+	.practice__column {
+		flex: 0 1 100%;
+	}
+}
+.practice__item {
+
+}
+.item-practice {
+	background-color: #fff;
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+}
+.item-practice__content {
+	padding: 30px;
+	flex: 1 1 auto;
+}
+.item-practice__link {
+	color: inherit;
+	display: inline-block;
+}
+.item-practice__link:hover {
+	text-decoration: underline;
+}
+/* Чтобы подействовал внешний отступ, нужно в .item-practice__link поставить "display: inline-block", поскольку внешний отступ не действует для строчных объектов, каким является ссылка. "inline-block" - по сути это блок в строке, т. е. элемент строчный, но к нему применяются размеры и отступы, как у блочного*/
+.item-practice__link:not(:last-child){
+	margin: 0px 0px 15px 0px;
+}
+.item-practice__title {
+	letter-spacing: 0.1px;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 150%;
+}
+.item-practice__text {
+	color: #737373;
+	line-height: 142%;
+}
+.item-practice__image {
+	display: block;
+	padding: 0px 0px 60% 0px;
 }
